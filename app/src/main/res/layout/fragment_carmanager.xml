@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Body"
+    android:background="@color/color_white"
+    android:orientation="vertical" 
+    
+    >
+	
+     <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+   
+    <ListView
+        android:id="@+id/lv_car_manager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_white"
+        />
+</LinearLayout>

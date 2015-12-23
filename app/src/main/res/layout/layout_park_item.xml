@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/padding_small"
+    android:background="@drawable/bg_info_window">
+
+    <TextView
+        android:id="@+id/home_parking_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/icon_info"
+        android:drawablePadding="@dimen/padding_tiny"
+        android:padding="@dimen/padding_small"
+        android:textSize="@dimen/base_text_size_tiny"
+        android:textColor="@color/color_wallet_balance"
+        android:text="@string/home_parking_info" />
+
+    <TextView
+        android:layout_width="@dimen/base_divider_size_small"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:background="@color/color_home_gray_divider" />
+
+    <LinearLayout
+        android:layout_width="@dimen/home_info_window_width"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/padding_small"
+        android:paddingRight="@dimen/padding_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/home_parking_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/base_text_size_small_medium"
+            android:textStyle="bold"
+            android:singleLine="true"/>
+
+        <TextView
+            android:id="@+id/home_parking_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/color_home_gray"
+            android:singleLine="true"
+            android:textSize="@dimen/base_text_size_tiny" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="@dimen/base_divider_size_small"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginBottom="@dimen/padding_small"
+        android:background="@color/color_home_gray_divider" />
+
+    <TextView
+        android:id="@+id/home_parking_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableTop="@drawable/icon_go"
+        android:drawablePadding="@dimen/padding_tiny"
+        android:padding="@dimen/padding_small"
+        android:textSize="@dimen/base_text_size_tiny"
+        android:textColor="@color/color_bill_orange"
+        android:text="@string/home_parking_go" />
+</LinearLayout>

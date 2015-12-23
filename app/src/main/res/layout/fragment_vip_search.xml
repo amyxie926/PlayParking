@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray_bg">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/padding_small">
+
+        <EditText
+            android:id="@+id/vip_search_keyword"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/edit_bg"
+            android:drawableLeft="@drawable/icon_search"
+            android:drawablePadding="@dimen/padding_tiny"
+            android:imeOptions="actionSearch"
+            android:hint="@string/vip_search_fragment_search_hint"
+            android:padding="@dimen/padding_medium"
+            android:textSize="@dimen/base_text_size_small_medium" />
+
+        <TextView
+            android:id="@+id/vip_search_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/color_green"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/padding_small"
+            android:paddingLeft="@dimen/home_activity_padding_large"
+            android:paddingRight="@dimen/home_activity_padding_large"
+            android:text="@string/home_search"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/base_text_size_small_medium" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/vip_search_park_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/padding_small"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/vip_search_recommend"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:padding="@dimen/padding_medium"
+            android:gravity="center"
+            android:button="@null"
+            android:text="@string/vip_search_fragment_recommend"
+            android:textSize="@dimen/base_text_size_medium"
+            android:textColor="@color/vip_text_select"
+            android:background="@drawable/vip_search_background" />
+
+        <RadioButton
+            android:id="@+id/vip_search_around"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:gravity="center"
+            android:button="@null"
+            android:text="@string/vip_search_fragment_around"
+            android:textSize="@dimen/base_text_size_medium"
+            android:textColor="@color/vip_text_select"
+            android:background="@drawable/vip_search_background" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/padding_small"
+        android:layout_marginLeft="@dimen/padding_small"
+        android:layout_marginRight="@dimen/padding_small">
+
+        <ListView
+            android:id="@+id/vip_search_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.pnikosis.materialishprogress.ProgressWheel
+            android:id="@+id/vip_search_progress"
+            android:layout_width="@dimen/base_title_height"
+            android:layout_height="@dimen/base_title_height"
+            android:layout_gravity="center"
+            wheel:matProg_barColor="@color/color_light_blue"
+            wheel:matProg_progressIndeterminate="true"
+            android:visibility="gone" />
+    </FrameLayout>
+
+</LinearLayout>

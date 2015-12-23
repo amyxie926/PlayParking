@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/padding_large"
+        android:paddingBottom="@dimen/padding_small">
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_indoor_parking"
+                android:padding="@dimen/padding_tiny" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_parking_indoor"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/base_text_size_tiny" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_style"
+                android:layout_margin="@dimen/padding_tiny" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_outdoor_parking"
+                android:padding="@dimen/padding_tiny" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_parking_outdoor"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/base_text_size_tiny" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_style"
+                android:layout_margin="@dimen/padding_tiny" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_community_parking"
+                android:padding="@dimen/padding_tiny" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_parking_community"
+                android:textColor="@color/color_black"
+                android:textSize="@dimen/base_text_size_tiny" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:button="@drawable/radio_style"
+                android:layout_margin="@dimen/padding_tiny" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_divider_size"
+        android:background="@color/color_light_gray_bg"
+        android:layout_marginLeft="@dimen/padding_large"
+        android:layout_marginRight="@dimen/padding_large"
+        android:layout_marginBottom="@dimen/padding_small" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+
+        android:textColor="@color/color_dark_gray"
+        android:text="@string/home_parking_search_area"
+        android:textSize="@dimen/base_text_size_medium" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_tiny"
+        android:layout_marginTop="@dimen/padding_tiny"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <RadioGroup
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="8"
+            android:orientation="horizontal">
+            <RadioButton
+                android:id="@+id/home_parking_search_area_250"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/home_parking_search_area_250"
+                android:textSize="@dimen/base_text_size_small"
+                android:textColor="@color/search_area_test_select"
+                android:background="@drawable/search_area"
+                android:padding="@dimen/padding_tiny"
+                android:gravity="center"
+                android:checked="true"
+                android:layout_margin="@dimen/padding_tiny" />
+            <RadioButton
+                android:id="@+id/home_parking_search_area_500"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/home_parking_search_area_500"
+                android:textSize="@dimen/base_text_size_small"
+                android:textColor="@color/search_area_test_select"
+                android:background="@drawable/search_area"
+                android:padding="@dimen/padding_tiny"
+                android:gravity="center"
+                android:layout_margin="@dimen/padding_tiny" />
+            <RadioButton
+                android:id="@+id/home_parking_search_area_1000"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/home_parking_search_area_1000"
+                android:textSize="@dimen/base_text_size_small"
+                android:textColor="@color/search_area_test_select"
+                android:background="@drawable/search_area"
+                android:padding="@dimen/padding_tiny"
+                android:gravity="center"
+                android:layout_margin="@dimen/padding_tiny" />
+            <RadioButton
+                android:id="@+id/home_parking_search_area_2000"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:button="@null"
+                android:text="@string/home_parking_search_area_2000"
+                android:textSize="@dimen/base_text_size_small"
+                android:textColor="@color/search_area_test_select"
+                android:background="@drawable/search_area"
+                android:padding="@dimen/padding_tiny"
+                android:gravity="center"
+                android:layout_margin="@dimen/padding_tiny" />
+        </RadioGroup>
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+</LinearLayout>

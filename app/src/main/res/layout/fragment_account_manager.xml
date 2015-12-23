@@ -1,0 +1,299 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/account_manage_bg_color"
+    android:orientation="vertical">
+
+    <!-- <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" /> -->
+<RelativeLayout
+    	android:layout_width="match_parent"
+    	android:layout_height="@dimen/base_title_height"
+    	android:background="@drawable/home_title_bg"
+    	android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/header_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:padding="@dimen/padding_small"
+        android:src="@drawable/icon_title_back" />
+
+    <TextView
+        android:id="@+id/header_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/base_text_size_large" />
+    <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="账户管理"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/font_size_large" />
+
+        <TextView
+            android:id="@+id/conserveTV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:layout_alignParentRight="true"
+            android:paddingRight="@dimen/name_layout_paddingRight2"
+            android:layout_centerVertical="true"
+            android:text="保存"
+            android:textColor="@android:color/background_light"
+            android:textSize="@dimen/font_size_large"
+            android:visibility="invisible" />
+</RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <!-- 头像 -->
+            <LinearLayout
+                android:background="@color/color_white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/photo"
+                android:paddingLeft="@dimen/account_fragment_layout_marginLeft2"
+                android:paddingRight="@dimen/account_fragment_layout_marginLeft2"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_large"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_manage_fragment_TextView2_text"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/account_manager_frgment_user_image"
+                    android:layout_width="@dimen/menu_fragment_avatar_size"
+                    android:layout_height="@dimen/menu_fragment_avatar_size"
+                    android:gravity="center"
+                    android:src="@drawable/icon_menu_user_avatar" />
+
+                <!-- <ImageButton
+                    android:id="@+id/photoBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/account_fragment_layout_padding"
+                    android:layout_gravity="right"
+                    android:background="@drawable/home_fragment_menu_user_avatar" /> -->
+            </LinearLayout>
+
+
+            <!-- 账户Id显示 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:background="@color/color_white"
+                android:id="@+id/account_manager_frgment_accountID"
+                android:paddingLeft="@dimen/account_fragment_layout_marginLeft2"
+                android:paddingRight="@dimen/account_fragment_layout_marginLeft2"
+                android:orientation="horizontal">
+
+                <TextView
+                    
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/padding_large"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_manage_fragment_TextView3_text"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/accont_manage_accountID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_manage_fragment_TextView4_text"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+            </LinearLayout>
+
+            <!-- 用户名 -->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/account_manager_frgment_username"
+                android:background="@color/color_white"
+                android:paddingLeft="@dimen/account_fragment_layout_marginLeft2"
+                android:paddingRight="@dimen/account_fragment_layout_marginLeft2"
+                android:layout_marginTop="@dimen/padding_large"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:padding="@dimen/padding_large"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_manage_fragment_TextView5_text"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+				<TextView
+				    android:id="@+id/tv_name" 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="dddddd"
+				    />
+                
+                <ImageView
+                    android:id="@+id/userNameView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/account_fragment_layout_padding2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+
+
+            <!-- 性别 -->
+            <LinearLayout
+                android:id="@+id/account_manager_frgment_gender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/account_fragment_layout_marginLeft2"
+                android:paddingRight="@dimen/account_fragment_layout_marginLeft2"
+                android:layout_marginTop="2dip"
+                android:background="@color/color_white"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_large"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_manage_fragment_TextView6_text"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+                <TextView 
+                    android:id="@+id/genderChoice" 
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:text="男"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/account_fragment_layout_padding2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+
+
+            <!-- 修改密码 -->
+            <LinearLayout
+                android:id="@+id/account_manager_frgment_changePassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dip"
+                android:background="@color/color_white"
+                android:paddingLeft="@dimen/account_fragment_layout_marginLeft2"
+                android:paddingRight="@dimen/account_fragment_layout_marginLeft2"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/padding_large"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:text="@string/account_manage_fragment_TextView7_text"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/account_fragment_layout_padding2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+
+
+            <!-- 支付账单管理 -->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/accountManagment"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:background="@color/color_white"-->
+            <!--android:paddingLeft="@dimen/account_fragment_layout_marginLeft2"-->
+            <!--android:paddingRight="@dimen/account_fragment_layout_marginLeft2"-->
+            <!--android:layout_marginTop="@dimen/padding_large"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="0dip"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/padding_large"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:gravity="center_vertical"-->
+            <!--android:text="@string/account_manage_fragment_TextView8_text"-->
+            <!--android:textSize="@dimen/base_text_size_small_medium" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:padding="@dimen/account_fragment_layout_padding2"-->
+            <!--android:layout_gravity="center_vertical"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:src="@drawable/icon_gray_back" />-->
+            <!--</LinearLayout>-->
+
+            <Button
+                android:id="@+id/account_manager_frgment_logout_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/account_fragment_layout_marginTop2"
+                android:layout_marginLeft="@dimen/account_fragment_layout_margin"
+                android:layout_marginRight="@dimen/account_fragment_layout_margin"
+                android:background="@drawable/green_bg_button"
+                android:gravity="center"
+                android:text="@string/account_manage_fragment_button_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_medium" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_gravity="bottom"
+              android:gravity="bottom"
+              android:background="@color/color_white">
+
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:paddingRight="@dimen/combination_pay_dialog_padding"
+                  android:orientation="horizontal">
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_weight="1"
+                  android:text="@string/combination_pay_layout_title"
+                  android:textSize="@dimen/base_text_size_medium_large"
+                  android:layout_gravity="center"
+                  android:padding="@dimen/combination_pay_dialog_padding_small"
+                  android:gravity="center"
+                  android:textColor="@color/color_menu_text_gray_bg"/>
+
+        <ImageView android:id="@+id/com"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/icon_pay_cancle"/>
+    </LinearLayout>
+
+    <TextView android:layout_width="match_parent"
+              android:layout_height="@dimen/base_divider_size_small"
+              android:background="@color/color_gray_bg"/>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:gravity="center"
+                  android:paddingRight="@dimen/combination_pay_dialog_padding"
+                  android:paddingBottom="@dimen/combination_pay_dialog_padding_large"
+                  android:orientation="vertical">
+
+
+        <TextView android:id="@+id/combination_pay_diaolog_pay_moeny_tv"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="5.00"
+                  android:textColor="@color/color_black"
+                  android:layout_gravity="center"
+                  android:paddingRight="@dimen/combination_pay_dialog_padding_small"
+                  android:paddingTop="@dimen/combination_pay_dialog_padding"
+                  android:gravity="center"
+                  android:textSize="50sp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_gravity="center"
+                  android:gravity="center"
+                  android:text="@string/combination_pay_layout_need_pay"
+                  android:textSize="@dimen/base_text_size_medium"/>
+    </LinearLayout>
+    <CheckBox
+            android:id="@+id/combination_pay_layout_current_balance_ck"
+            style="@style/CustomCheckboxTheme"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/combination_pay_dialog_layout_margin"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dip"
+            android:text="@string/combination_pay_layout_current_balance"
+            android:textColor="@color/color_black"
+            android:textSize="@dimen/base_text_size_medium"
+            android:checked="false"/>
+
+    <Button
+            android:id="@+id/pay_fragment_confrim_pay_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/combination_pay_dialog_layout_margin"
+            android:layout_marginRight="@dimen/combination_pay_dialog_layout_margin"
+            android:layout_marginTop="@dimen/combination_pay_dialog_layout_margin_large"
+            android:background="@drawable/green_bg_button"
+            android:gravity="center"
+            android:padding="@dimen/padding_small"
+            android:text="@string/pay_fragment_confirm_pay"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/base_text_size_medium"/>
+</LinearLayout>

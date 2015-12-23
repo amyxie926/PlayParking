@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/wallet_home_fragment_money"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/color_wallet_balance"
+                        android:text="88"
+                        android:textSize="@dimen/wallet_balance_text_size" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/base_text_size_small"
+                        android:textColor="@color/color_dark_gray"
+                        android:text="@string/wallet_home_fragment_yuan" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/base_divider_size_small"
+                    android:background="@color/color_dark_gray"
+                    android:padding="@dimen/padding_small" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/base_text_size_small"
+                    android:textColor="@color/color_dark_gray"
+                    android:padding="@dimen/padding_tiny_small"
+                    android:text="@string/wallet_home_fragment_current_balance" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_wallet_help"
+            android:padding="@dimen/padding_large"
+            android:layout_gravity="right|top" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/padding_tiny"
+        android:background="@color/color_light_gray_bg" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/wallet_home_fragment_current_bill"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            android:padding="@dimen/padding_medium"
+            android:gravity="center"
+            android:button="@null"
+            android:text="@string/wallet_home_fragment_current_bill"
+            android:textSize="@dimen/base_text_size_medium"
+            android:textColor="@color/wallet_bill_test_select"
+            android:background="@drawable/wallet_bill_background" />
+
+        <RadioButton
+            android:id="@+id/wallet_home_fragment_bill_history"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="@dimen/padding_medium"
+            android:gravity="center"
+            android:button="@null"
+            android:text="@string/wallet_home_fragment_bill_history"
+            android:textSize="@dimen/base_text_size_medium"
+            android:textColor="@color/wallet_bill_test_select"
+            android:background="@drawable/wallet_bill_background" />
+    </RadioGroup>
+
+    <ListView
+        android:id="@+id/wallet_home_fragment_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:cacheColorHint="@color/color_transparent" />
+
+    <TextView
+        android:id="@+id/wallet_home_fragment_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_small"
+        android:background="@drawable/wallet_pay"
+        android:gravity="center"
+        android:padding="@dimen/home_activity_layout_margin"
+        android:text="@string/wallet_home_fragment_pay"
+        android:textColor="@color/color_white"
+        android:textSize="@dimen/base_text_size_small_medium" />
+</LinearLayout>

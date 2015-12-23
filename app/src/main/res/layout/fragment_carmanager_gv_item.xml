@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+    
+   
+ <Button
+       android:id="@+id/bt_frag_carmanager_item"
+       android:layout_width="@dimen/carmanager_fragment_gridview_button_width"
+       android:layout_height="@dimen/carmanager_fragment_gridview_button_height"
+        android:textColor="@color/color_black"
+        android:background="@drawable/button_selector_choice_area_main"
+        />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+    <!-- 账户管理_ -->
+    <ListView
+        android:id="@+id/bill_manager_fragmnet_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:cacheColorHint="@color/color_transparent"
+        android:drawSelectorOnTop="false"
+        android:layout="@+id/textViewCurrentBase"
+        android:listSelector="@color/color_transparent"
+        android:textColor="@color/account_textColor"
+        android:textSize="@dimen/font_size_large" />
+
+    <TextView
+        android:id="@+id/bill_manager_fragment_no_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/vip_fragment_layout_margin"
+        android:gravity="center"
+        android:paddingBottom="30dip"
+        android:paddingTop="60dip"
+        android:text="@string/bill_manager_fragment_no_data"
+        android:textColor="@color/truck_text"
+        android:textSize="@dimen/base_text_size_small_medium"
+        android:visibility="gone" />
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+
+    <string name="dev_schema">http</string>
+    <string name="dev_host">wx.wanzhuantingche.me</string>
+    <string name="dev_port">-1</string>
+    <string name="dev_path"></string>
+
+    <!-- test key -->
+    <string name="baidu_api_key">T2csReg9OSGEHuG4tCUDrCBE</string>
+
+    <!-- key -->
+    <!-- <string name="baidu_api_key">igAWF4BpcPVPHPOpmv5AnGZR</string> -->
+
+</resources>

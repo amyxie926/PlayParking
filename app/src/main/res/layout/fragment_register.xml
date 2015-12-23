@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_white"
+              android:orientation="vertical">
+
+    <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_title_height"
+            layout="@layout/layout_header"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/register_fragment_layout_margin"
+            android:layout_marginLeft="@dimen/register_fragment_layout_margin"
+            android:layout_marginRight="@dimen/register_fragment_layout_margin"
+            android:layout_marginTop="@dimen/register_fragment_layout_margin_large"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/padding_small">
+
+        <FrameLayout
+                android:layout_width="0dip"
+                android:layout_weight="3"
+                android:layout_height="wrap_content">
+            <EditText
+                    android:id="@+id/register_fragment_phone"
+                    style="@style/base_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/icon_et_gray_bg"
+                    android:hint="@string/resister_fragment_phone_hint"
+                    android:inputType="phone"
+                    android:maxLength="11"
+                    android:textColor="@color/color_dark_gray"/>
+
+            <ImageView
+                    android:id="@+id/register_fragment_phone_clear"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|bottom"
+                    android:layout_marginBottom="@dimen/login_fragment_layout_margin_smaller"
+                    android:layout_marginRight="@dimen/login_fragment_layout_margin_small"
+                    android:src="@drawable/icon_clear"
+                    android:visibility="invisible"/>
+        </FrameLayout>
+        <Button
+                android:id="@+id/register_fragment_get_code_btn"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/padding_tiny_small"
+                android:layout_weight="1"
+                android:background="@drawable/green_bg_button"
+                android:text="@string/resister_fragment_code_btn_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_medium"/>
+    </LinearLayout>
+
+    <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/register_fragment_layout_margin"
+            android:layout_marginRight="@dimen/register_fragment_layout_margin"
+            android:layout_marginTop="@dimen/register_fragment_layout_margin_small"
+            android:layout_height="wrap_content">
+        <EditText
+                android:id="@+id/register_fragment_code"
+                style="@style/base_edit_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@drawable/icon_et_gray_bg"
+                android:hint="@string/resister_fragment_code_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="@color/color_dark_gray"/>
+
+        <ImageView
+                android:id="@+id/register_fragment_code_clear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|bottom"
+                android:layout_marginBottom="@dimen/login_fragment_layout_margin_smaller"
+                android:layout_marginRight="@dimen/login_fragment_layout_margin_small"
+                android:src="@drawable/icon_clear"
+                android:visibility="invisible"/>
+    </FrameLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/padding_large"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+        <CheckBox
+                android:id="@+id/register_fragment_agreement_checkBox"
+                style="@style/CustomCheckboxTheme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_fragment_agreement_text"
+                android:textColor="@color/color_dark_gray"
+                android:textSize="@dimen/base_text_size_small_medium"/>
+
+        <TextView
+                android:id="@+id/register_fragment_agreement"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/register_fragment_agreement"
+                android:textColor="@color/color_navi_blue"
+                android:textSize="@dimen/base_text_size_small_medium"/>
+    </LinearLayout>
+
+    <Button
+            android:id="@+id/register_fragment_register_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginRight="@dimen/padding_large"
+            android:layout_marginTop="@dimen/register_fragment_layout_margin_large"
+            android:background="@drawable/green_bg_button"
+            android:gravity="center"
+            android:padding="@dimen/padding_tiny_small"
+            android:text="@string/resister_fragment_register_btn"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/base_text_size_medium"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/menu_fragment_width"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/padding_large"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/avatar_change_take_picture_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_tiny"
+        android:background="@drawable/avatar_layout_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="@string/avatar_change_take_picture"
+            android:textColor="@color/color_navi_blue"
+            android:textSize="@dimen/base_text_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/avatar_change_choose_image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/padding_tiny"
+        android:background="@drawable/avatar_layout_bg"
+        android:gravity="center" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/padding_small"
+            android:text="@string/avatar_change_choose_image"
+            android:textColor="@color/color_navi_blue"
+            android:textSize="@dimen/base_text_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:orientation="vertical"
+        android:padding="@dimen/carmanager_fragment_first_padding" >
+
+        <TextView
+            android:id="@+id/relativelayout_hot_area_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/carmanager_fragment__hot_area" />
+
+        <GridView
+            android:id="@+id/gv_carmanager_hot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/carmanager_fragment_first_margintop"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/carmanager_fragment_verticalSpacing" >
+        </GridView>
+
+        <TextView
+            android:id="@+id/tv_carmanager_otherarea"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/carmanager_fragment_first_margintop_textview"
+            android:text="@string/carmanager_fragment__other_area" />
+
+        <GridView
+            android:id="@+id/gv_carmanager_otherarea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/carmanager_fragment_first_margintop"
+            android:numColumns="4"
+            android:verticalSpacing="@dimen/carmanager_fragment_verticalSpacing" >
+        </GridView>
+    </LinearLayout>
+
+</LinearLayout>

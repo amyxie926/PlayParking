@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 超小号 -->
+    <dimen name="text_size_micro">12sp</dimen>
+    <!-- 小号 -->
+    <dimen name="font_size_small">14sp</dimen>
+    <!-- 标准 -->
+    <dimen name="font_size_medium">18sp</dimen>
+    <!-- 大号 -->
+    <dimen name="font_size_large">22sp</dimen>
+    <!-- 大一号 -->
+    <dimen name="font_size_xlarge">26sp</dimen>
+    <!-- 大二号 -->
+    <dimen name="font_size_xxlarge">30sp</dimen>
+    <!-- 超大号 -->
+    <dimen name="font_size_xxxlarge">60sp</dimen>
+
+    <!-- test size -->
+    <dimen name="base_text_size_tiny">10sp</dimen>
+    <dimen name="base_text_size_tiny_small">12sp</dimen>
+    <dimen name="base_text_size_small">14sp</dimen>
+    <dimen name="base_text_size_small_medium">16sp</dimen>
+    <dimen name="base_text_size_medium">18sp</dimen>
+    <dimen name="base_text_size_medium_large">20sp</dimen>
+    <dimen name="base_text_size_large">22sp</dimen>
+    <dimen name="base_title_height">45dip</dimen>
+    <dimen name="textsize4">14sp</dimen>
+
+    <!-- common size -->
+    <dimen name="base_divider_size_small">1dip</dimen>
+    <dimen name="base_divider_size">2dip</dimen>
+    <dimen name="padding_tiny">4dip</dimen>
+    <dimen name="base_drawablePadding">5dip</dimen>
+    <dimen name="padding_tiny_small">6dip</dimen>
+    <dimen name="padding_small">8dip</dimen>
+    <dimen name="padding_medium">12dip</dimen>
+    <dimen name="padding_large">16dip</dimen>
+    <dimen name="base_loading_size">80dip</dimen>
+
+    <!-- base confirm dialog -->
+    <dimen name="base_confirm_dialog_layout_top">10dip</dimen>
+    <dimen name="base_confirm_dialog_layout_marginBottom">15dip</dimen>
+    <dimen name="base_confirm_dialog_layout_margin">20dip</dimen>
+    <dimen name="base_confirm_dialog_layout_margin_left">30dip</dimen>
+    <dimen name="base_confirm_dialog_height">40dip</dimen>
+
+    <!-- home activity -->
+    <dimen name="home_activity_layout_margin_small">5dip</dimen>
+    <dimen name="home_activity_layout_margin">10dip</dimen>
+    <dimen name="home_activity_layout_margin_large">20dip</dimen>
+    <dimen name="home_activity_layout_margin_largest">35dip</dimen>
+    <dimen name="home_activity_gps">40dip</dimen>
+    <dimen name="home_activity_padding">8dip</dimen>
+    <dimen name="home_activity_padding_large">15dip</dimen>
+
+    <!--map-->
+    <dimen name="home_info_window_width">160dip</dimen>
+
+    <!-- menu  fragment -->
+    <dimen name="slidingmenu_offset">60dip</dimen>
+    <dimen name="menu_fragment_layout_margin">10dip</dimen>
+    <dimen name="menu_fragment_layout_marginBottom">15dip</dimen>
+    <dimen name="menu_fragment_layout_margin_large">20dip</dimen>
+    <dimen name="menu_fragment_drawablePadding">10dip</dimen>
+    <dimen name="menu_fragment_padding">20dip</dimen>
+    <dimen name="menu_fragment_layout_marginTop">40dip</dimen>
+    <dimen name="menu_fragment_layout_margin_largest">60dip</dimen>
+    <dimen name="menu_fragment_avatar_size">70dip</dimen>
+    <dimen name="menu_fragment_width">260dip</dimen>
+
+    <!-- pay fragment -->
+    <dimen name="pay_fragment_drawablePadding">10dip</dimen>
+    <dimen name="pay_fragment_layout_margin">15dip</dimen>
+    <dimen name="pay_fragment_layout_margin_large">20dip</dimen>
+    <dimen name="pay_fragment_padding">10dip</dimen>
+    <dimen name="pay_fragment_padding_large">20dip</dimen>
+
+    <!--combination pay dialog-->
+    <dimen name="combination_pay_dialog_padding_small">10dip</dimen>
+    <dimen name="combination_pay_dialog_padding">20dip</dimen>
+    <dimen name="combination_pay_dialog_padding_large">30dip</dimen>
+    <dimen name="combination_pay_dialog_layout_margin">20dip</dimen>
+    <dimen name="combination_pay_dialog_layout_margin_large">30dip</dimen>
+
+    <!-- pay result fragment -->
+    <dimen name="pay_result_fragment_drawablePadding">10dip</dimen>
+    <dimen name="pay_result_fragment_layout_margin_small">5dip</dimen>
+    <dimen name="pay_result_fragment_layout_margin">20dip</dimen>
+    <dimen name="pay_result_fragment_layout_margin_large">30dip</dimen>
+    <dimen name="pay_result_fragment_layout_marginTop">80dip</dimen>
+
+    <!-- login fragment -->
+    <dimen name="login_fragment_layout_margin_smaller">5dip</dimen>
+    <dimen name="login_fragment_layout_margin_small">10dip</dimen>
+    <dimen name="login_fragment_layout_margin">20dip</dimen>
+    <dimen name="login_fragment_layout_marginTop">40dip</dimen>
+
+    <!-- register fragment -->
+    <dimen name="register_fragment_layout_margin_small">10dip</dimen>
+    <dimen name="register_fragment_layout_margin">20dip</dimen>
+    <dimen name="register_fragment_layout_margin_large">40dip</dimen>
+
+    <!-- truck fragment -->
+    <dimen name="truck_fragment_truck_linearLayout">150dip</dimen>
+    <dimen name="truck_fragment_truck_linearLayout_marginLeft">15dip</dimen>
+    <dimen name="truck_fragment_truck_linearLayout_marginRight">15dip</dimen>
+    <dimen name="truck_fragment_layout_price_Driving_width">80dip</dimen>
+    <dimen name="truck_fragment_layout_price_Driving_hight">80dip</dimen>
+    <dimen name="truck_fragment_layout_price_Driving_marginRight">5dip</dimen>
+    <dimen name="truck_fragment_layout_price_Driving_marginTop">23dip</dimen>
+    <dimen name="truck_fragment_layout_price_Driving_textview">20dip</dimen>
+    <dimen name="truck_fragment_layout_insurance_marginRight">5dip</dimen>
+    <dimen name="truck_fragment_layout_insurance_insurance_width">80dip</dimen>
+    <dimen name="truck_fragment_layout_insurance_insurance_height">80dip</dimen>
+    <dimen name="truck_fragment_layout_insurance_insurance_textView">20dip</dimen>
+    <dimen name="trucktextsize">18dip</dimen>
+    <dimen name="textsize2">18dip</dimen>
+    <dimen name="left">10dip</dimen>
+
+    <!-- carmanager -->
+    <dimen name="carmanager_fragment_relativelayout_margintop">5dip</dimen>
+    <dimen name="carmanager_fragment_ImageView_addcar_width">300dip</dimen>
+    <dimen name="carmanager_fragment_ImageView_addcar_height">50dip</dimen>
+    <dimen name="carmanager_fragment_textviewsize">18dip</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="carmanager_fragment_gridview_button_width">60dip</dimen>
+    <dimen name="carmanager_fragment_gridview_button_height">33dip</dimen>
+    <dimen name="carmanager_fragment_verticalSpacing">10dip</dimen>
+    <dimen name="carmanager_fragment_first_margintop">10dip</dimen>
+    <dimen name="carmanager_fragment_first_margintop_textview">30dip</dimen>
+    <dimen name="carmanager_fragment_first_padding">30dip</dimen>
+    <dimen name="carmanager_fragment_second_gridview_margintop">80dip</dimen>
+    <dimen name="carmanager_fragment_second_padding">30dip</dimen>
+    <dimen name="carmanager_fragment_third_margintop">80dip</dimen>
+    <dimen name="carmanager_fragment_third_button_width">0dip</dimen>
+    <dimen name="carmanager_fragment_third_button_height">40dip</dimen>
+    <dimen name="carmanager_fragment_third_button_marginleft">30dip</dimen>
+    <dimen name="carmanager_fragment_third_editext_size">14.5sp</dimen>
+    <dimen name="carmanager_fragment_third_editext_height">40dip</dimen>
+    <dimen name="carmanager_fragment_third_editext_width">150dip</dimen>
+    <dimen name="carmanager_fragment_third_editext_marginleft">10dip</dimen>
+    <dimen name="carmanager_fragment_third_editext_paddingleft">5dip</dimen>
+    <dimen name="carmanager_fragment_third_button_sure_width">0dp</dimen>
+    <dimen name="carmanager_fragment_third_button_sure_height">45dip</dimen>
+    <dimen name="carmanager_fragment_third_button_sure_marginleft">10dip</dimen>
+    <dimen name="carmanager_fragment_third_button_sure_marginright">30dip</dimen>
+    <dimen name="carmanager_fragment_third_textview_margintop">10dip</dimen>
+    <dimen name="carmanager_fragment_third_button_sure_size">16sp</dimen>
+
+    <!-- AccountManage fragment -->
+    <dimen name="account_fragment_layout_paddingRight">16dip</dimen>
+    <dimen name="account_fragment_layout_marginLeft">10dip</dimen>
+    <dimen name="account_fragment_layout_marginLeft2">15dip</dimen>
+    <dimen name="account_fragment_layout_marginTop">8dip</dimen>
+    <dimen name="account_fragment_layout_marginTop2">75dip</dimen>
+    <dimen name="account_fragment_layout_margin">20dip</dimen>
+    <dimen name="account_fragment_layout_padding">15px</dimen>
+    <dimen name="account_fragment_layout_padding2">3px</dimen>
+
+    <!-- Account fragment -->
+    <dimen name="account_fragment2_layout_paddingTop">6dip</dimen>
+    <dimen name="account_fragment2_layout_paddingRight">16dip</dimen>
+    <dimen name="account_fragment2_layout_marginLeft">10dip</dimen>
+
+    <!-- activity accountdetail -->
+    <dimen name="accountdetail_layout_paddingRight">16dip</dimen>
+    <dimen name="accountdetail_layout_marginLeft">10dip</dimen>
+    <dimen name="accountdetail_layout_marginTop">20px</dimen>
+    <dimen name="accountdetail_layout_marginBottom">20px</dimen>
+    <dimen name="accountdetail_layout_marginLeft2">10px</dimen>
+    <dimen name="accountdetail_layout_marginRight">10px</dimen>
+    <dimen name="accountdetail_layout_marginTop2">15px</dimen>
+    <dimen name="accountdetail_layout_marginLeft3">15px</dimen>
+    <dimen name="accountdetail_layout_marginLeft4">50px</dimen>
+    <dimen name="accountdetail_layout_marginLeft5">20px</dimen>
+    <dimen name="accountdetail_layout_marginLeft6">70px</dimen>
+    <dimen name="accountdetail_layout_marginBottom2">5px</dimen>
+
+    <!-- name fragment -->
+    <dimen name="name_layout_paddingRight">16dip</dimen>
+    <dimen name="name_layout_paddingRight2">8dip</dimen>
+    <dimen name="name_layout_marginLeft">10dip</dimen>
+    <dimen name="name_layout_marginTop">50px</dimen>
+
+    <!-- change password  fragment -->
+    <dimen name="password_layout_marginTop">30dip</dimen>
+    <dimen name="password_layout_marginTop2">75dip</dimen>
+    <dimen name="password_layout_margin">20dip</dimen>
+
+    <!-- activity integeralexchange -->
+    <dimen name="integeral_exchange_layout_height">150dip</dimen>
+    <dimen name="integeral_exchange_layout_height2">130dip</dimen>
+    <dimen name="integeral_exchange_layout_width">140dip</dimen>
+    <dimen name="integeral_exchange_layout_paddingRight">16dip</dimen>
+    <dimen name="integeral_exchange_layout_marginLeft">30dip</dimen>
+    <dimen name="integeral_exchange_layout_padding">5dip</dimen>
+    <dimen name="integeral_exchange_layout_paddingLeft">30dip</dimen>
+    <dimen name="integeral_exchange_layout_paddingLeft2">35dip</dimen>
+    <dimen name="integeral_exchange_layout_marginLeft2">30dip</dimen>
+    <dimen name="integeral_exchange_layout_marginTop">10dip</dimen>
+
+    <!-- integeral_record -->
+    <dimen name="integeral_record_layout_paddingRight">16dip</dimen>
+    <dimen name="integeral_record_layout_marginLeft">10dip</dimen>
+    <dimen name="integeral_record_layout_padding">5dip</dimen>
+    <dimen name="integeral_record_layout_paddingLeft">5dip</dimen>
+    <dimen name="integeral_record_layout_paddingTop">10dip</dimen>
+
+    <!-- integeral -->
+    <dimen name="integeral_layout_paddingRight">16dip</dimen>
+    <dimen name="integeral_layout_marginLeft">10dip</dimen>
+    <dimen name="integeral_layout_marginLeft2">2dip</dimen>
+    <dimen name="integeral_layout_padding">5dip</dimen>
+    <dimen name="integeral_layout_dividerHeight">4dip</dimen>
+
+    <!-- password fragment -->
+    <dimen name="password_fragment_marginTop">30dip</dimen>
+    <dimen name="password_fragment_marginTop2">30dip</dimen>
+    <dimen name="password_fragment_margin">20dip</dimen>
+
+    <!-- fragment forgetpass -->
+    <dimen name="fragment_forgetpass_marginBottom">20dip</dimen>
+    <dimen name="fragment_forgetpass_marginLeft">20dip</dimen>
+    <dimen name="fragment_forgetpass_marginRight">20dip</dimen>
+    <dimen name="fragment_forgetpass_marginTop">40dip</dimen>
+    <dimen name="fragment_forgetpass_marginTop2">10dip</dimen>
+    <dimen name="fragment_forgetpass_width">0dip</dimen>
+
+    <!-- vip fragment -->
+    <dimen name="vip_fragment_layout_margin">10dip</dimen>
+    <dimen name="vip_fragment_layout_margin_large">15dip</dimen>
+    <dimen name="vip_fragment_layout_margin_largest">20dip</dimen>
+    <dimen name="vip_fragment_padding">10dip</dimen>
+    <dimen name="vip_fragment_padding_large">15dip</dimen>
+
+    <!--wallet fragment-->
+    <dimen name="wallet_balance_text_size">50sp</dimen>
+    <dimen name="wallet_bill_text_size">30sp</dimen>
+</resources>

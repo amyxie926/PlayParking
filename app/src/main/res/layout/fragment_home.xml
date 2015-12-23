@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_home_header" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/bmapView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/home_activity_layout_margin_large"
+            android:orientation="vertical"
+            android:gravity="right">
+
+            <ImageView
+                android:id="@+id/home_seat_switch_iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/home_seat_switch"
+                android:visibility="gone"/>
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/home_more_setting_check_box"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="@dimen/home_activity_layout_margin"-->
+                <!--android:button="@drawable/home_more_setting" />-->
+
+            <!--<include-->
+                <!--android:id="@+id/home_more_setting_row"-->
+                <!--layout="@layout/layout_home_setting"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:visibility="gone" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_marginBottom="@dimen/home_activity_layout_margin"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/home_activity_layout_margin_large"
+                    android:layout_marginLeft="@dimen/home_activity_layout_margin_large"
+                    android:layout_marginRight="@dimen/home_activity_layout_margin_large"
+                    android:layout_marginTop="@dimen/home_activity_layout_margin_largest"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/home_gps_iv"
+                        android:layout_width="@dimen/home_activity_gps"
+                        android:layout_height="@dimen/home_activity_gps"
+                        android:src="@drawable/home_gps" />
+
+                    <!--<com.pnikosis.materialishprogress.ProgressWheel-->
+                        <!--android:id="@+id/home_gps_progress"-->
+                        <!--android:layout_width="@dimen/home_activity_layout_margin_largest"-->
+                        <!--android:layout_height="@dimen/home_activity_layout_margin_largest"-->
+                        <!--android:layout_centerInParent="true"-->
+                        <!--wheel:matProg_barColor="@color/color_light_blue"-->
+                        <!--wheel:matProg_progressIndeterminate="true"-->
+                        <!--android:visibility="gone" />-->
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/home_activity_layout_margin_small"
+                    android:background="@color/color_white"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/home_search_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/home_activity_layout_margin_small"
+                        android:layout_marginRight="@dimen/home_activity_layout_margin_small"
+                        android:background="@drawable/edit_bg"
+                        android:drawableLeft="@drawable/icon_search"
+                        android:drawablePadding="@dimen/base_drawablePadding"
+                        android:text="@string/home_search_hint"
+                        android:gravity="center_vertical"
+                        android:padding="@dimen/home_activity_layout_margin"
+                        android:textSize="@dimen/base_text_size_small_medium" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_divider_size"
+                android:layout_marginRight="@dimen/home_activity_layout_margin"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/home_fragment_pay_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/color_white"
+                    android:orientation="vertical"
+                    android:visibility="invisible">
+
+                    <TextView
+                        android:id="@+id/home_scan_code_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/home_activity_padding_large"
+                        android:paddingLeft="@dimen/home_activity_padding"
+                        android:paddingRight="@dimen/home_activity_padding"
+                        android:paddingTop="@dimen/home_activity_padding_large"
+                        android:text="@string/home_scan_code_text"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/base_text_size_small" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/base_divider_size_small"
+                        android:layout_marginLeft="@dimen/home_activity_layout_margin"
+                        android:layout_marginRight="@dimen/home_activity_layout_margin"
+                        android:background="@color/color_gray_bg" />
+
+                    <TextView
+                        android:id="@+id/home_LPR_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:paddingBottom="@dimen/home_activity_padding_large"
+                        android:paddingLeft="@dimen/home_activity_padding"
+                        android:paddingRight="@dimen/home_activity_padding"
+                        android:paddingTop="@dimen/home_activity_padding_large"
+                        android:text="@string/home_LPR_text"
+                        android:textColor="@color/color_black"
+                        android:textSize="@dimen/base_text_size_small" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/home_pay_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/base_divider_size"
+                    android:background="@color/color_green"
+                    android:drawableLeft="@drawable/icon_pay"
+                    android:drawablePadding="@dimen/base_drawablePadding"
+                    android:gravity="center"
+                    android:padding="@dimen/home_activity_layout_margin"
+                    android:text="@string/home_pay_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

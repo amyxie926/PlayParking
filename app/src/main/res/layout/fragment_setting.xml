@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:toggle="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 自动搜索停车场开关 -->
+
+            <LinearLayout
+                android:id="@+id/setting_fragment_auto_search_parking_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/setting_fragment_auto_search_parking_switch"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <me.zcw.togglebutton.ToggleButton
+                    android:id="@+id/setting_fragment_auto_search_parking_switch_tb"
+                    style="@style/ToggleButtonStyle"
+                    toggle:borderWidth="@dimen/base_divider_size"
+                    toggle:offBorderColor="@color/toggle_off_border_color"
+                    toggle:offColor="@color/toggle_off_color"
+                    toggle:onColor="@color/toggle_on_color"
+                    toggle:spotColor="@color/toggle_spot_color" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 推送开关 -->
+
+            <LinearLayout
+                android:id="@+id/setting_fragment_push_switch_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/setting_fragment_push_switch"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <me.zcw.togglebutton.ToggleButton
+                    android:id="@+id/setting_fragment_the_wifi_tip_update_tb"
+                    style="@style/ToggleButtonStyle"
+                    toggle:borderWidth="@dimen/base_divider_size"
+                    toggle:offBorderColor="@color/toggle_off_border_color"
+                    toggle:offColor="@color/toggle_off_color"
+                    toggle:onColor="@color/toggle_on_color"
+                    toggle:spotColor="@color/toggle_spot_color" />
+            </LinearLayout>
+
+            <!-- 下载离线地图 -->
+
+            <LinearLayout
+                android:id="@+id/setting_fragment_download_offline_maps_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/setting_fragment_download_offline_maps"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dip"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 清除缓存 -->
+
+            <LinearLayout
+                android:id="@+id/setting_fragment_clear_cache_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/setting_fragment_clear_cache"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dip"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+
+            <!-- 关于我们 -->
+
+            <LinearLayout
+                android:id="@+id/setting_fragment_about_us_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_small"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/setting_fragment_about_us"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dip"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+
+            <!-- 版本更新 -->
+
+            <LinearLayout
+                android:id="@+id/setting_fragment_update_version_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_tiny_small"
+                android:background="@color/color_white"
+                android:gravity="center_vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:text="@string/setting_fragment_update_version"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_medium"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="30dip"
+                    android:paddingBottom="15dip"
+                    android:paddingTop="15dip"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

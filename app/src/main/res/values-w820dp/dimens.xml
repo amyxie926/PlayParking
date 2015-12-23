@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="padding_tiny">5dip</dimen>
+    <dimen name="padding_tiny_small">10dip</dimen>
+    <dimen name="padding_small">12dip</dimen>
+    <dimen name="padding_medium">16dip</dimen>
+    <dimen name="padding_large">24dip</dimen>
+    <dimen name="base_text_size_tiny">12sp</dimen>
+    <dimen name="base_text_size_tiny_small">14sp</dimen>
+    <dimen name="base_text_size_small">16sp</dimen>
+    <dimen name="base_text_size_small_medium">18sp</dimen>
+    <dimen name="base_text_size_medium">20sp</dimen>
+    <dimen name="base_text_size_medium_large">22sp</dimen>
+    <dimen name="base_text_size_large">24sp</dimen>
+    <dimen name="activity_horizontal_margin">64dp</dimen>
+
+</resources>

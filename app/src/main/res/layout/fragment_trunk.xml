@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Body"
+    tools:context=".ActivityTrunk" >
+
+    <RelativeLayout
+        android:id="@+id/layout_trunk_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/truck_linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/truck_fragment_truck_linearLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_trunk_title"
+        android:layout_marginLeft="@dimen/truck_fragment_truck_linearLayout_marginLeft"
+        android:layout_marginRight="@dimen/truck_fragment_truck_linearLayout_marginRight" >
+
+        <LinearLayout
+            android:id="@+id/layout_price"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/Driving"
+                android:layout_width="@dimen/truck_fragment_layout_price_Driving_width"
+                android:layout_height="@dimen/truck_fragment_layout_price_Driving_hight"
+                android:layout_marginRight="@dimen/truck_fragment_layout_price_Driving_marginRight"
+                android:layout_marginTop="@dimen/truck_fragment_layout_price_Driving_marginTop"
+                android:background="@drawable/img_price" />
+
+            <TextView
+                android:id="@+id/driving_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/truck_fragment__driving"
+                 android:textColor="@color/truck_text"
+                android:textSize="@dimen/truck_fragment_layout_price_Driving_textview" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_insurance"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/truck_fragment_layout_insurance_marginRight"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/Insurance"
+                android:layout_width="@dimen/truck_fragment_layout_insurance_insurance_width"
+                android:layout_height="@dimen/truck_fragment_layout_insurance_insurance_height"
+                android:background="@drawable/img_insurance"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/insurance_textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/truck_fragment__insurance"
+                android:textColor="@color/truck_text"
+                android:textSize="@dimen/truck_fragment_layout_insurance_insurance_textView" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_cleancar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:visibility="gone"
+            android:orientation="vertical" >
+
+          
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

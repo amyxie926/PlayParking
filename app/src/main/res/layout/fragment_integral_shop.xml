@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ptr="http://schemas.android.com/apk/res-auto" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/Body"
+    android:orientation="vertical">
+<include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+		<!-- 积分兑换 -->
+<ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/jijifen_head4" />
+
+	<!-- 当前积分 -->
+    <LinearLayout
+        android:id="@+id/layout_integralrow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:padding="@dimen/integeral_layout_padding" >
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/integral_fragment_text1"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/textsize4" />
+
+        <TextView
+            android:id="@+id/tv_user_integral"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/integral_fragment_text2"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/textsize2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/integeral_layout_marginLeft2"
+            android:text="@string/integral_fragment_text3"
+            android:textColor="@android:color/background_dark"
+            android:textSize="@dimen/textsize2" />
+        </LinearLayout>
+        <!-- 积分商城 -->
+   <!--     The PullToRefreshListView replaces a standard ListView widget. -->
+    <com.handmark.pulltorefresh.library.PullToRefreshGridView
+        android:id="@+id/pullToRefreshGridView1"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:columnWidth="100dp"
+        android:gravity="fill"
+        android:horizontalSpacing="1dp"
+        android:numColumns="2"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="1dp"
+        ptr:ptrMode="both" >
+    </com.handmark.pulltorefresh.library.PullToRefreshGridView>
+</LinearLayout>

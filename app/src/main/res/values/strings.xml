@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">玩转停车</string>
+    <string name="app_version">v2.0.1.35</string>
+    <string name="base_ok">确定</string>
+    <string name="base_cancel">取消</string>
+    <string name="base_loading">loading&#8230;</string>
+    <string name="base_network_error">您的网络不是很给力，请您稍后再试</string>
+
+    <!-- error dialog -->
+    <string name="error_dialog_title">错误</string>
+
+    <!-- home fragment -->
+    <string name="home_search">搜索</string>
+    <string name="home_search_hint">搜索停车场或小区</string>
+    <string name="home_search_no_result">暂无搜索结果</string>
+    <string name="home_pay_text">支付</string>
+    <string name="home_scan_code_text">扫码</string>
+    <string name="home_LPR_text">车牌识别</string>
+    <string name="home_parking_indoor">室内停车场</string>
+    <string name="home_parking_outdoor">室外停车场</string>
+    <string name="home_parking_community">社区停车场</string>
+    <string name="home_parking_search_area">搜索范围</string>
+    <string name="home_parking_search_area_250">250m</string>
+    <string name="home_parking_search_area_500">500m</string>
+    <string name="home_parking_search_area_1000">1000m</string>
+    <string name="home_parking_search_area_2000">2000m</string>
+    <string name="home_parking_info">详细</string>
+    <string name="home_parking_go">到这里</string>
+
+    <!-- navigation drawer fragment menu  recharge -->
+    <string name="menu_fragment_messaging_text">消息</string>
+    <string name="menu_fragment_integral_text">积分</string>
+    <string name="menu_fragment_coupon_text">优惠劵</string>
+    <string name="menu_fragment_wallet_text">钱包</string>
+    <string name="menu_fragment_vip_text">会员卡</string>
+    <string name="menu_fragment_bind_cars_manager_text">绑定车辆管理</string>
+    <string name="menu_fragment_billing_manager_text">账单管理</string>
+    <string name="menu_fragment_trunk_text">后备箱</string>
+    <string name="menu_fragment_home_text">首页</string>
+    <string name="menu_fragment_setting_text">设置</string>
+    <string name="menu_fragment_top_login">登录·注册</string>
+    <string name="menu_fragment_recharge_desc">(充50元送50元)</string>
+    <string name="menu_fragment_recharge_balance">余额:%s元</string>
+
+    <!-- avatar fragment -->
+    <string name="avatar_change_avatar_title">选择头像</string>
+    <string name="avatar_change_take_picture">拍照</string>
+    <string name="avatar_change_choose_image">从相册选择</string>
+
+    <!-- pay fragment -->
+    <string name="pay_fragment_title">支付</string>
+    <string name="pay_fragment_plate_number">车牌号码</string>
+    <string name="pay_fragment_into_storehouse_time">进库时间</string>
+    <string name="pay_fragment_out_storehouse_time">出库时间</string>
+    <string name="pay_fragment_invited_fees">应缴费用</string>
+    <string name="pay_fragment_subsidy">补贴</string>
+    <string name="pay_fragment_coupon">优惠劵</string>
+    <string name="pay_fragment_paid_up_fee">实缴费用</string>
+    <string name="pay_fragment_aliPay">支付宝支付</string>
+    <string name="pay_fragment_weixin_pay">微信支付</string>
+    <string name="pay_fragment_confirm_pay">确认支付</string>
+    <string name="pay_fragment_product_name">玩转停车支付</string>
+    <string name="pay_fragment_product_description">账单支付</string>
+    <string name="pay_fragment_bill_sync">同步支付信息</string>
+    <string name="pay_fragment_bill_sync_success">同步支付信息成功</string>
+    <string name="pay_fragment_bill_sync_failed">同步支付信息失败</string>
+    <string name="pay_fragment_yuan">元</string>
+    <string name="pay_fragment_pay_success">支付成功</string>
+    <string name="pay_fragment_pay_failed">支付失败</string>
+    <string name="pay_fragment_paying">支付结果确认中</string>
+
+    <!--combination pay dialog-->
+    <string name="combination_pay_layout_title">组合支付</string>
+    <string name="combination_pay_layout_need_pay">还需支付</string>
+    <string name="combination_pay_layout_current_balance">当前余额:%元</string>
+
+    <!-- pay result fragment -->
+    <string name="pay_result_fragment_title">支付结果</string>
+    <string name="pay_result_fragment_success">支付成功</string>
+    <string name="pay_result_fragment_fail">支付失败</string>
+    <string name="pay_result_fragment_fail_btn">重新支付</string>
+    <string name="pay_result_fragment_success_friendly_tip">友情提示:</string>
+    <string name="pay_result_fragment_fail_tip_1">1.请确保15分钟内离场,超时将产生额外的停车费用.</string>
+    <string name="pay_result_fragment_fail_tip_2">2.请保留小票,直至车辆离开停车场.</string>
+    <string name="pay_result_fragment_fail_tip_3">3.若产生重复缴费操作,我们会尽快将重复费用返还到您的账户中.</string>
+
+    <!-- register fragment -->
+    <string name="register_fragment_resister">注册</string>
+    <string name="register_fragment_agreement_text">已阅读并同意</string>
+    <string name="register_fragment_agreement">《玩转停车用户服务条款》</string>
+
+    <!-- passwordfragment -->
+    <string name="passwordfragment">用户注册</string>
+    <string name="passwordfragment_text">请输入不少于8位的密码</string>
+    <string name="passwordfragment_text2">请确认密码</string>
+    <string name="password_fragment_message_pass_error">密码格式错误，请重新输入</string>
+    <string name="password_fragment_message_pass_not_same">您两次输入的密码不一致，请重新输入</string>
+    <string name="password_fragment_message_success">恭喜你，注册成功</string>
+    <string name="password_fragment_message_success2">恭喜你，修改成功</string>
+
+    <!-- login fragment -->
+    <string name="login_fragment_login">用户登录</string>
+    <string name="login_fragment_phone_hint">请输入您的手机号码</string>
+    <string name="login_fragment_pwd_hint">密码</string>
+    <string name="login_fragment_forget_pwd">忘记密码</string>
+    <string name="login_fragment_login_btn">登录</string>
+    <string name="login_fragment_login_phone_null">请输入您的手机号码</string>
+    <string name="login_fragment_login_pwd_null">请输入您的密码</string>
+    <string name="login_fragment_message_success">恭喜你，登录成功</string>
+
+    <!-- register fragment -->
+    <string name="resister_fragment_register_title">用户注册</string>
+    <string name="resister_fragment_phone_hint">输入手机号码</string>
+    <string name="resister_fragment_code_btn_text">验证</string>
+    <string name="resister_fragment_code_hint">输入验证码</string>
+    <string name="resister_fragment_register_btn">注册</string>
+    <string name="register_fragment_dynamic_code_text">%ss</string>
+    <string name="register_fragment_button_afresh_get">重新获取</string>
+    <string name="register_fragment_message_code_success">验证码发送成功，请查收</string>
+    <string name="register_fragment_message_phone_error">请输入正确的手机号码</string>
+    <string name="register_fragment_message_code_error">请输入正确的验证码</string>
+    <string name="register_fragment_message_agreement_not_checked">请阅读并同意服务条款</string>
+
+    <!-- forgetpass fragment -->
+    <string name="forgetpass_fragment_register_title">忘记密码</string>
+    <string name="forgetpass_fragment_pass_hint">请输入不少于8位的密码</string>
+    <string name="forgetpass_fragment_confrim_pass_hint">请确认密码</string>
+    <string name="forgetpass_fragment_next_btn">下一步</string>
+    <string name="forgetpass_fragment_setpassword_complete">完成</string>
+
+    <string name="forgetpass_fragment_phone_null">请输入您的手机号码</string>
+
+    <!-- setting fragment -->
+    <string name="setting_fragment_title">设置</string>
+    <string name="setting_fragment_auto_search_parking_switch">自动搜索停车场开关</string>
+    <string name="setting_fragment_push_switch">推送开关</string>
+    <string name="setting_fragment_download_offline_maps">下载离线地图</string>
+    <string name="setting_fragment_clear_cache">清除缓存</string>
+    <string name="setting_fragment_about_us">关于我们</string>
+    <string name="setting_fragment_update_version">版本更新</string>
+    <string name="setting_fragment_new_version">最新版本</string>
+
+    <!-- truck -->
+    <string name="truck_fragment__title">后备箱</string>
+    <string name="truckdeatil_fragment__title">友情链接</string>
+    <string name="truck_fragment__driving">爱代驾</string>
+    <string name="truck_fragment__insurance">保险</string>
+
+    <!-- carmanager -->
+    <string name="carmanager_fragment__title">我的车辆管理</string>
+    <string name="carmanager_fragment__addcar">添加绑定车辆</string>
+    <string name="carmanager_fragment_carnumber_error">格式错误</string>
+    <string name="carmanager_fragment_bindcarnumber">没有 绑定车牌，请绑定车牌</string>
+    <string name="carmanager_fragment_bindcarnumber_success">绑定车辆成功</string>
+    <string name="carmanager_fragment_bindcarnumber_fail">绑定车辆失败</string>
+    <string name="carmanager_fragment_querycarnumber_success">绑定车牌</string>
+    <string name="carmanager_fragment_deletecarnumber_success">删除车牌成功</string>
+    <string name="carmanager_fragment_deletecarnumber_fail">删除车牌失败</string>
+    <string name="carmanager_fragment_input_carnoerror">请输入车牌号</string>
+
+    <!-- recharge fragment -->
+    <string name="recharge_fragment_title">充值</string>
+    <string name="recharge_fragment_recharge_50">充值50元</string>
+    <string name="recharge_fragment_recharge_100">充值100元</string>
+    <string name="recharge_fragment_recharge_200">充值200元</string>
+    <string name="recharge_fragment_recharge_500">充值500元</string>
+    <string name="recharge_fragment_recharge_give_50">(送50元)</string>
+    <string name="recharge_fragment_recharge_give_100">(送100元)</string>
+    <string name="recharge_fragment_recharge_give_300">(送300元)</string>
+    <string name="recharge_fragment_recharge_give_700">(送700元)</string>
+    <string name="recharge_fragment_playparking">玩转支付</string>
+    <string name="recharge_fragment_aliPay">支付宝支付</string>
+    <string name="recharge_fragment_weixin_pay">微信支付</string>
+    <string name="recharge_fragment_playparking_balance">余额:%s元</string>
+    <string name="recharge_fragment_confirm_pay">确认支付</string>
+
+    <!-- recharge result fragment -->
+    <string name="recharge_result_fragment_title">充值结果</string>
+    <string name="recharge_result_fragment_success">充值成功</string>
+    <string name="recharge_result_fragment_fail">充值失败</string>
+    <string name="recharge_result_fragment_reset_recharge">重新充值</string>
+    <string name="title_activity_account_manage_fragment">AccountManageFragment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_account_fragment">AccountFragment</string>
+    <string name="title_activity_accountdetail_fragment">AccountdetailFragment</string>
+    <string name="title_activity_integeral1_fragment">Integeral1Fragment</string>
+    <string name="title_activity_integral2_fragment">Integral2Fragment</string>
+    <string name="title_activity_integral_fragment">IntegralFragment</string>
+    <string name="title_activity_name_fragment">NameFragment</string>
+    <string name="title_activity_password_fragment">PasswordFragment</string>
+
+    <!-- genderchoice -->
+    <string name="strtitle">按我选择：</string>
+    <string name="str">你选择的是：</string>
+
+    <drawable name="clr_normal">#FFB6C1</drawable>
+    <drawable name="clr_pressed">#ff6501</drawable>
+
+    <string name="confirm">确定</string>
+    <string name="cancel">取消</string>
+    <string name="title_activity_alert_dialog">AlertDialog</string>
+
+    <!-- carmanager -->
+    <string name="carmanager_fragment__hot_area">热门地区</string>
+    <string name="carmanager_fragment__other_area">其他地区</string>
+    <string name="carmanager_fragment__button_sure">確定</string>
+    <string name="carmanager_fragment__text_annotation">输入字母，无需区分大小写</string>
+
+    <!-- Account_manage_fragment -->
+    <string name="account_manage_fragment_title">账户管理</string>
+    <string name="account_manage_fragment_TextView1_text">账户管理</string>
+    <string name="account_manage_fragment_TextView2_text">头像</string>
+    <string name="account_manage_fragment_TextView3_text">账户ID</string>
+    <string name="account_manage_fragment_TextView4_text">13888888888</string>
+    <string name="account_manage_fragment_TextView5_text">用户名</string>
+    <string name="account_manage_fragment_TextView6_text">性别</string>
+    <string name="account_manage_fragment_TextView7_text">修改密码</string>
+    <string name="account_manage_fragment_TextView8_text">支付账单管理</string>
+    <string name="account_manage_fragment_button_text">注销</string>
+    <!-- login off -->
+    <string name="account_fragment_log_off_question">确定要注销账号</string>
+    <string name="account_fragment_log_off">注销</string>
+
+    <!-- account fragment -->
+    <string name="account_fragment_title">账户管理</string>
+    <string name="account_fragment_TextView1_text">账户管理</string>
+    <string name="account_fragment_TextView2_text">头像</string>
+
+    <!-- pet name fragment -->
+    <string name="name_fragment_title">用户名</string>
+    <string name="name_fragment_TextView1_text">用户名</string>
+    <string name="name_fragment_TextView2_text">完成</string>
+
+    <!-- password fragment -->
+    <string name="password_fragment_title">修改密码</string>
+    <string name="password_fragment_text">修改密码</string>
+    <string name="password_fragment_hint1">请输入原始密码</string>
+    <string name="password_fragment_hint2">请输入新密码</string>
+    <string name="password_fragment_button">完成</string>
+
+    <!-- integral fragment -->
+    <string name="integral_fragment_title">积分兑换</string>
+    <string name="integral_fragment_text">积分兑换</string>
+    <string name="integral_fragment_text1">当前积分：</string>
+    <string name="integral_fragment_text2">0</string>
+    <string name="integral_fragment_text3">分</string>
+
+    <!-- integera exchange fragment -->
+    <string name="integral_exchange_fragment_title">积分兑换</string>
+    <string name="integral_exchange_fragment_text">188</string>
+    <string name="integral_exchange_fragment_text2">分</string>
+    <string name="integral_exchange_fragment_text3">当前积分：</string>
+    <string name="integral_exchange_fragment_text4">积分商城</string>
+    <string name="integral_exchange_fragment_text5">兑换记录</string>
+    <string name="integral_exchange_fragment_text6">当前积分：</string>
+
+    <!-- integral record fragment -->
+    <string name="integral_record_fragment_title">兑换记录</string>
+    <string name="integral_record_fragment_text">兑换记录</string>
+
+    <!-- ForgetPassSettingPwdFragment -->
+    <string name="forget_pass_success">恭喜你设置成功！</string>
+
+    <!-- vip fragment -->
+    <string name="vip_fragment_title">会员卡</string>
+    <string name="vip_fragment_add_car">添加会员</string>
+    <string name="vip_fragment_vip_validDate">有效期:%s</string>
+    <string name="vip_fragment_no_vip">暂时没有会员卡</string>
+    <!-- vip details fragment -->
+    <string name="vip_details_fragment_title">会员详情</string>
+    <string name="vip_details_fragment_info">会员说明</string>
+    <string name="vip_details_fragment_use_info">会员使用须知说明</string>
+    <string name="vip_details_fragment_buy">购买</string>
+    <string name="vip_details_fragment_renewals">续费</string>
+    <string name="vip_details_fragment_residual_amount">(剩余量:%d)</string>
+
+    <!-- vip pay fragment -->
+    <string name="vip_pay_fragment_paid_fee">实缴费用</string>
+    <string name="vip_pay_fragment_paid_fee_moeny">%s元</string>
+    <string name="vip_pay_fragment_add_binding_car">添加绑定车辆</string>
+    <string name="vip_pay_fragment_add_binding_car_info">车辆一经绑定,便不得更改,请慎重填写</string>
+
+    <!--vip search fragment-->
+    <string name="vip_search_fragment_search_hint">搜索停车场名称</string>
+    <string name="vip_search_fragment_recommend">推荐停车场</string>
+    <string name="vip_search_fragment_around">附近停车场</string>
+    <string name="vip_search_fragment_next">换一批</string>
+    <string name="vip_search_fragment_no_more">没有更多停车场啦</string>
+
+    <!--wallet home fragment-->
+    <string name="wallet_home_fragment_title">钱包</string>
+    <string name="wallet_home_fragment_yuan">元</string>
+    <string name="wallet_home_fragment_current_balance">当前余额</string>
+    <string name="wallet_home_fragment_current_bill">本月账单</string>
+    <string name="wallet_home_fragment_bill_history">历史账单</string>
+    <string name="wallet_home_fragment_pay">充值（多充多送）</string>
+
+    <!--bill detail fragment-->
+    <string name="bill_detail_fragment_title">账单详情</string>
+    <string name="bill_detail_fragment_car_no">车牌号码：</string>
+    <string name="bill_detail_fragment_in_time">进库时间：</string>
+    <string name="bill_detail_fragment_out_time">出库时间：</string>
+    <string name="bill_detail_fragment_use_time">停留时间：</string>
+    <string name="bill_detail_fragment_cost">停车费用：</string>
+    <string name="bill_detail_fragment_subsidy">玩转补贴：</string>
+    <string name="bill_detail_fragment_coupon">优惠券：</string>
+    <string name="bill_detail_fragment_final_cost">总费用：</string>
+    <string name="bill_detail_fragment_pay_time">支付时间：</string>
+
+    <!--about us fragmnet-->
+    <string name="about_us_fragment_title">关于我们</string>
+    <string name="about_us_fragment_products">产品介绍</string>
+    <string name="about_us_fragment_service_terms">服务条款</string>
+    <string name="about_us_fragment_use_info">使用说明</string>
+    <string name="about_us_fragment_user_feedback">用户反馈</string>
+
+    <!--账单管理-->
+    <string name="bill_manager_fragment_title">账单管理</string>
+    <string name="bill_manager_fragment_total_fee">总费用:%s元</string>
+    <string name="bill_manager_fragment_pay_date">支付时间:%s</string>
+    <string name="bill_manager_fragment_no_data">暂时没有账单</string>
+</resources>

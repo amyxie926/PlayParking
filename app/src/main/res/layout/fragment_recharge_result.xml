@@ -1,0 +1,43 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray_bg"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_title_height"
+            layout="@layout/layout_header" />
+
+        <TextView
+            android:id="@+id/recharge_fragment_result_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/pay_result_fragment_layout_marginTop"
+            android:layout_marginTop="@dimen/pay_result_fragment_layout_marginTop"
+            android:drawableLeft="@drawable/icon_pay_success"
+            android:drawablePadding="@dimen/pay_result_fragment_drawablePadding"
+            android:text="@string/recharge_result_fragment_success"
+            android:textSize="@dimen/base_text_size_small_medium" />
+
+        <Button
+            android:id="@+id/recharge_result_fragment_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pay_result_fragment_layout_margin"
+            android:layout_marginRight="@dimen/pay_result_fragment_layout_margin"
+            android:layout_marginTop="@dimen/pay_result_fragment_layout_marginTop"
+            android:background="@drawable/green_bg_button"
+            android:gravity="center"
+            android:text="@string/base_ok"
+            android:textColor="@color/color_white"
+            android:textSize="@dimen/base_text_size_medium" />
+    </LinearLayout>
+
+</ScrollView>

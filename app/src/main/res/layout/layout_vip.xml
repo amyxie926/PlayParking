@@ -1,0 +1,78 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/layout_vip_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/vip_fragment_layout_margin"
+        android:layout_marginRight="@dimen/vip_fragment_layout_margin"
+        android:layout_marginTop="@dimen/vip_fragment_layout_margin_large"
+        android:background="@drawable/icon_vip_bg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/vip_fragment_layout_margin_large"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/layout_marketname_tv"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="百联西郊购物中心"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_small_medium" />
+
+            <TextView
+                android:id="@+id/layout_vip_type_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月卡"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_small" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#38000000"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/vip_fragment_padding_large"
+            android:paddingRight="@dimen/vip_fragment_padding_large" >
+
+            <TextView
+                android:id="@+id/layout_car_number_tv"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/base_divider_size"
+                android:text="沪8888888"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_tiny_small" />
+
+            <TextView
+                android:id="@+id/layout_vip_valid_date_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/base_divider_size"
+                android:text="有效期:2015/08/15"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_tiny_small" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/color_gray_bg" />
+
+</LinearLayout>

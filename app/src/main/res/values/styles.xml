@@ -1,0 +1,56 @@
+<resources>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light.NoTitleBar"></style>
+
+    <style name="AppTheme" parent="AppBaseTheme"></style>
+
+    <style name="AppThemeFullScreen" parent="android:Theme.Light.NoTitleBar.Fullscreen"></style>
+
+    <!-- dialog -->
+    <style name="full_screen_dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="base_edit_text">
+        <item name="android:padding">@dimen/padding_tiny</item>
+        <item name="android:background">@color/color_white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:textColor">@color/color_black</item>
+        <item name="android:textColorHint">@color/color_menu_text_gray_bg</item>
+        <item name="android:textSize">@dimen/base_text_size_small_medium</item>
+  
+    </style>
+
+    <style name="ToggleButtonStyle">
+        <item name="android:layout_width">45dip</item>
+        <item name="android:layout_height">25dip</item>
+        <item name="android:layout_marginLeft">14dip</item>
+        <item name="android:layout_marginRight">14dip</item>
+        <item name="android:layout_marginTop">8dip</item>
+        <item name="android:layout_marginBottom">8dip</item>
+    </style>
+
+    <style name="Body">
+        <item name="android:background">@color/default_ui_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="ItemDividingLine">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:background">#cccccc</item>
+    </style>
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+    </style>
+
+</resources>

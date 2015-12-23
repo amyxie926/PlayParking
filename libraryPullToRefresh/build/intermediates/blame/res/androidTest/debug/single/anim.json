@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\home_banner_loading5.xml",
+        "source": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\home_banner_loading5.xml"
+    },
+    {
+        "merged": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_top.xml",
+        "source": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_top.xml"
+    },
+    {
+        "merged": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_out_to_bottom.xml",
+        "source": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_out_to_bottom.xml"
+    },
+    {
+        "merged": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_top.xml",
+        "source": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_top.xml"
+    },
+    {
+        "merged": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\slide_in_from_bottom.xml",
+        "source": "F:\\studio_workspace\\studio_workspace\\dome\\PlayParking\\trunk\\PlayParking\\libraryPullToRefresh\\build\\intermediates\\bundles\\debug\\res\\anim\\slide_in_from_bottom.xml"
+    }
+]

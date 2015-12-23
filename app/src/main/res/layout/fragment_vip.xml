@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/vip_fragment_layout_margin"
+        android:layout_marginRight="@dimen/vip_fragment_layout_margin"
+        android:orientation="vertical" >
+
+        <ListView
+            android:id="@+id/vip_fragment_listview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/vip_fragment_layout_margin"
+            android:layout_marginTop="@dimen/vip_fragment_layout_margin_largest" />
+
+        <TextView
+            android:id="@+id/vip_fragment_no_vip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/vip_fragment_layout_margin"
+            android:drawablePadding="15dip"
+            android:drawableTop="@drawable/icon_unvip"
+            android:gravity="center"
+            android:paddingBottom="30dip"
+            android:paddingTop="60dip"
+            android:text="@string/vip_fragment_no_vip"
+            android:textColor="@color/truck_text"
+            android:textSize="@dimen/base_text_size_small_medium"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

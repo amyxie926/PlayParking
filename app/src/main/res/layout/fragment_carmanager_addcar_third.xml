@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+
+    <LinearLayout
+        android:id="@+id/car_relarive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/carmanager_fragment_third_margintop"
+        android:orientation="horizontal"
+         >
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_frag_carmanager_items"
+            android:layout_width="@dimen/carmanager_fragment_third_button_width"
+            android:layout_height="@dimen/carmanager_fragment_third_editext_height"
+            android:layout_marginLeft="@dimen/carmanager_fragment_third_button_marginleft"
+            android:background="@drawable/button_selector_choice_area_main"
+            android:text="沪A"
+            android:textSize="@dimen/carmanager_fragment_third_editext_size" />
+
+        <EditText
+            android:layout_weight="2.1"
+            android:id="@+id/edit_data"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="@dimen/carmanager_fragment_third_editext_marginleft"
+            android:background="@drawable/editext_bag_sel" 
+            android:paddingLeft="@dimen/carmanager_fragment_third_editext_paddingleft"
+          	android:digits="1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz" 
+            android:maxLength="5"/>
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/bt_sure"
+            android:layout_width="@dimen/carmanager_fragment_third_button_sure_width"
+            android:layout_height="@dimen/carmanager_fragment_third_button_sure_height"
+            android:layout_marginRight="@dimen/carmanager_fragment_third_button_sure_marginright"
+            android:layout_marginLeft="@dimen/carmanager_fragment_third_button_sure_marginleft"
+            android:background="@drawable/button_sure_selector_main"
+            android:text="@string/carmanager_fragment__button_sure"
+            android:textColor="@color/button_sure_textcolor" 
+            android:textSize="@dimen/carmanager_fragment_third_button_sure_size"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/edit_data"
+        android:layout_marginTop="@dimen/carmanager_fragment_third_textview_margintop"
+        android:text="@string/carmanager_fragment__text_annotation" />
+
+</LinearLayout>

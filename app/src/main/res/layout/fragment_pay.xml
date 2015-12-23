@@ -1,0 +1,287 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_light_gray_bg"
+    android:orientation="vertical">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- 车牌号码 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pay_fragment_padding"
+                android:paddingRight="@dimen/pay_fragment_padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:text="@string/pay_fragment_plate_number"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/pay_fragment_plate_number_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 进库时间 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pay_fragment_padding"
+                android:paddingRight="@dimen/pay_fragment_padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dip"
+                    android:text="@string/pay_fragment_into_storehouse_time"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/pay_fragment_into_storehouse_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 出库时间 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pay_fragment_padding"
+                android:paddingRight="@dimen/pay_fragment_padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:text="@string/pay_fragment_out_storehouse_time"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/pay_fragment_out_storehouse_time_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 应邀费用 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pay_fragment_padding"
+                android:paddingRight="@dimen/pay_fragment_padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:text="@string/pay_fragment_invited_fees"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/pay_fragment_invited_fees_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 补贴 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_tiny_small"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pay_fragment_padding"
+                android:paddingRight="@dimen/pay_fragment_padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/pay_fragment_drawablePadding"
+                    android:drawableRight="@drawable/icon_red_round"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:text="@string/pay_fragment_subsidy"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/pay_fragment_subsidy_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_fragment_layout_margin"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 优惠券 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pay_fragment_padding"
+                android:paddingRight="@dimen/pay_fragment_padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:text="@string/pay_fragment_coupon"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/pay_fragment_coupon_tv"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pay_fragment_layout_margin"
+                    android:layout_weight="1"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:textColor="@color/color_red"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/icon_gray_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 实邀费用 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_tiny_small"
+                android:background="@color/color_white"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/pay_fragment_padding"
+                android:paddingRight="@dimen/pay_fragment_padding_large">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:text="@string/pay_fragment_paid_up_fee"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+
+                <TextView
+                    android:id="@+id/pay_fragment_paid_up_fee_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/pay_fragment_padding"
+                    android:textColor="@color/color_black"
+                    android:textSize="@dimen/base_text_size_small_medium" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/base_divider_size_small"
+                android:background="@color/color_light_gray_bg" />
+
+            <!-- 支付宝支付 微信支付 -->
+
+            <me.wztc.ui.RadioView
+                android:id="@+id/pay_fragment_rb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_tiny_small" />
+
+            <Button
+                android:id="@+id/pay_fragment_confrim_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/pay_fragment_layout_margin_large"
+                android:background="@drawable/green_bg_button"
+                android:gravity="center"
+                android:padding="@dimen/padding_small"
+                android:text="@string/pay_fragment_confirm_pay"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_medium" />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

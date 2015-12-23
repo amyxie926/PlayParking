@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_white"
+    android:orientation="vertical">
+<include
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_title_height"
+        layout="@layout/layout_header" />
+		<!-- 兑换记录显示 -->
+
+        <ListView
+            android:id="@+id/record"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/integeral_record_layout_paddingLeft"
+           android:layout_marginRight="@dimen/integeral_record_layout_paddingLeft"
+            android:cacheColorHint="@color/color_transparent"
+            android:drawSelectorOnTop="false"
+            android:layout="@+id/textViewCurrentBase"
+            android:listSelector="@color/color_transparent"
+            android:textColor="@color/integral_exchange_fragment_lvtextColor"
+            android:textSize="@dimen/font_size_medium" />
+
+</LinearLayout>

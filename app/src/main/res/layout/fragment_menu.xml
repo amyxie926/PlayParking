@@ -1,0 +1,356 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/color_transparent"
+              android:orientation="vertical">
+
+    <!-- 头像 -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/menu_fragment_layout_margin_large"
+            android:layout_marginLeft="@dimen/menu_fragment_layout_margin_large"
+            android:layout_marginTop="@dimen/menu_fragment_layout_margin_large"
+            android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/menu_fragment_user_image"
+                android:layout_width="@dimen/menu_fragment_avatar_size"
+                android:layout_height="@dimen/menu_fragment_avatar_size"
+                android:gravity="center"
+                android:src="@drawable/icon_menu_user_avatar"/>
+
+        <TextView
+                android:layout_width="@dimen/base_divider_size_small"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/menu_fragment_layout_marginBottom"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/menu_fragment_layout_marginBottom"
+                android:background="@color/color_white"/>
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_menu_login_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_fragment_layout_margin"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/menu_fragment_layout_margin"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+            <TextView
+                    android:id="@+id/menu_fragment_user_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+
+            <TextView
+                    android:id="@+id/menu_fragment_user_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_menu_unlogin_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/menu_fragment_layout_margin"
+                android:layout_marginLeft="@dimen/padding_medium"
+                android:layout_marginTop="@dimen/menu_fragment_layout_margin"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dip"
+                    android:layout_weight="1"
+                    android:text="@string/menu_fragment_top_login"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+        </LinearLayout>
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/menu_fragment_layout_margin_large"
+                android:src="@drawable/icon_white_back"/>
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_divider_size_small"
+            android:background="@color/color_dark_green"/>
+    <!-- 消息 积分 优惠券 -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_tiny_small"
+            android:layout_marginLeft="@dimen/menu_fragment_layout_margin"
+            android:layout_marginRight="@dimen/menu_fragment_layout_margin"
+            android:layout_marginTop="@dimen/padding_tiny_small"
+            android:orientation="horizontal">
+
+        <!-- 消息 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_messaging_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/base_drawablePadding"
+                    android:drawableTop="@drawable/icon_menu_message"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_messaging_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_small"/>
+        </LinearLayout>
+
+        <!-- 积分 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_integral_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/base_drawablePadding"
+                    android:drawableTop="@drawable/icon_menu_integral"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_integral_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_small"/>
+        </LinearLayout>
+
+        <!-- 优惠券 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_coupon_layout"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="@dimen/base_drawablePadding"
+                    android:drawableTop="@drawable/icon_menu_coupon"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_coupon_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_small"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_divider_size_small"
+            android:background="@color/color_dark_green"/>
+    <!-- menu -->
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_marginTop="@dimen/menu_fragment_layout_margin_large"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+        <!-- 钱包 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_recharge_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="@dimen/menu_fragment_padding">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_menu_recharge"
+                    android:drawablePadding="@dimen/menu_fragment_drawablePadding"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_wallet_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+
+            <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/menu_fragment_recharge_desc"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium"/>
+
+            <TextView
+                    android:id="@+id/menu_fragment_recharge_balance_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/menu_fragment_layout_margin"
+                    android:textColor="@color/color_menu_text_gray_bg"
+                    android:textSize="@dimen/base_text_size_small_medium"/>
+        </LinearLayout>
+
+        <!-- 会员卡 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_membership_car_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/menu_fragment_layout_margin_large"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_fragment_padding">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_menu_membership_car"
+                    android:drawablePadding="@dimen/menu_fragment_drawablePadding"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_vip_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+        </LinearLayout>
+
+        <!-- 绑定车辆管理 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_bind_cars_manager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/menu_fragment_layout_margin_large"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_fragment_padding">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_menu_banding_cars_manager"
+                    android:drawablePadding="@dimen/menu_fragment_drawablePadding"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_bind_cars_manager_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+        </LinearLayout>
+
+        <!-- 账单管理 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_billing_manager_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/menu_fragment_layout_margin_large"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_fragment_padding">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_menu_trunk"
+                    android:drawablePadding="@dimen/menu_fragment_drawablePadding"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_billing_manager_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+
+            <ImageView
+                    android:id="@+id/menu_fragment_billing_manager_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_tiny_small"
+                    android:src="@drawable/icon_red_round"/>
+        </LinearLayout>
+
+        <!-- 后备箱 -->
+
+        <LinearLayout
+                android:id="@+id/menu_fragment_trunk_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/menu_fragment_layout_margin_large"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/menu_fragment_padding">
+
+            <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/icon_menu_trunk"
+                    android:drawablePadding="@dimen/menu_fragment_drawablePadding"
+                    android:gravity="center"
+                    android:text="@string/menu_fragment_trunk_text"
+                    android:textColor="@color/color_white"
+                    android:textSize="@dimen/base_text_size_medium"/>
+
+            <ImageView
+                    android:id="@+id/menu_fragment_trunk_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/padding_tiny_small"
+                    android:src="@drawable/icon_red_round"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/menu_fragment_layout_margin_large"
+            android:layout_marginLeft="@dimen/menu_fragment_layout_margin_large"
+            android:layout_marginRight="@dimen/menu_fragment_layout_margin_large"
+            android:layout_marginTop="@dimen/menu_fragment_layout_margin_large"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/menu_fragment_setting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_fragment_layout_marginBottom"
+                android:layout_marginLeft="@dimen/menu_fragment_layout_margin_large"
+                android:drawableLeft="@drawable/icon_menu_setting"
+                android:drawablePadding="@dimen/menu_fragment_drawablePadding"
+                android:gravity="center"
+                android:text="@string/menu_fragment_setting_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_medium"/>
+
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <!-- 首页-->
+        <TextView
+                android:id="@+id/menu_fragment_home"
+                android:layout_width="0dip"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/menu_fragment_layout_marginBottom"
+                android:layout_marginRight="@dimen/menu_fragment_layout_margin_large"
+                android:text="@string/menu_fragment_home_text"
+                android:textColor="@color/color_white"
+                android:textSize="@dimen/base_text_size_medium"/>
+    </LinearLayout>
+
+
+</LinearLayout>
